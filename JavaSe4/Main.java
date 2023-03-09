@@ -66,14 +66,14 @@ public class Main {
         //0 , 1 , 2 ,
 
 //4章問9
-     int array[][] = new int[][] { {1,2}, {2,3,4} };
+     /*int array[][] = new int[][] { {1,2}, {2,3,4} };
      int total = 0;
      for (int i = 0; i < array.length; i++) {
          for (int j = i; j < array[i].length; j++) {
              total += array[i][j];
      }
      }
-     System.out.println(total);
+     System.out.println(total);*/
      //10
 
 //4章問10
@@ -83,8 +83,57 @@ public class Main {
     //無限ループになる
 
 //4章問11
-    
+    /*String [][] array = { { "A", "B", "C" } };
+    for (Object obj : array ) {
+        System.out.print(obj);
+    }*/
+    //Ljava.lang.String;@1dbd16a6
+
+//4章問12
+    /*String[] array = {"A","B","C"};
+    for (String str : array) {
+        str = "D";
     }
-    
+    for (String str : array) {
+        System.out.print(str);
+    }*/
+    //ABC
+
+//4章問14
+    /*String[] array = { "A" , "B" };
+    for (String a : array) {
+        for (String b : array) {
+            if ("B".equals(b))
+               break;
+            System.out.print(b);
+        }
+    }*/
+    //AA
+
+//4章問15
+    /*int[] array = { 1, 2, 3, 4, 5};
+    int total = 0;
+    for (int i : array) {
+        if (i % 2 == 0)
+           continue;
+           total += i;
+    }
+    System.out.println(total);*/
+    //9
+
+//4章問17
+    int total = 0;
+    a: for (int i = 0; i < 5; i++) {
+        b : for (int j = 0; j < 5; j++) {
+            if (i % 2 == 0) continue a;
+            if (3 < j) break b;
+            total += j;
+        }
+    }
+    System.out.println(total); 
+    //12   
+    }
 }
+ 
+
 
