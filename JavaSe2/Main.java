@@ -59,12 +59,12 @@ public static void main(String[] args) {
 
 //2章問12
 
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
         String str = "abcde";
         System.out.println(str.indexOf("abcdef"));
     }
-}
+} */
 
 //5文字の文字列の中に、6文字の文字列が存在しない為-1が戻される
 //indexOfは文字列のどの位置に存在するか調べるメソット
@@ -80,6 +80,8 @@ public class Main {
         System.out.println(str.substring(2,4));  
     }
 }*/
+//substringメソッドは文字列を排出するメソッドです。
+//|a|b|c|d|e|最初を0から数えて棒が5本2〜4なのでcdが正解
 
 //cd
 
@@ -91,6 +93,7 @@ public class Main {
     }
 }*/
 
+//最初の2文字のaaがbになり後ろのaaがbになるのでbb
 //bb
 
 //2章問15
@@ -100,6 +103,10 @@ public class Main {
         System.out.println(str.charAt(str.length()));
     }
 }*/
+
+//charAtは引数で指定された位置にある文字を抽出します。
+//この時0〜4の数値で位置を特定します。
+//現在5文字なので範囲外の位置と認識して実行時スローになる
 
 //実行時に例外がスローされる
 
