@@ -107,6 +107,8 @@ public class Sample {
        public Sample(int num) {
            this.num = num;
 
+           //10
+
 //6章問30
        /*int num ;
        public Sample(int num) { 

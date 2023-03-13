@@ -107,7 +107,8 @@ public class Main {
       System.out.print(" , ");
       System.out.println(a.equals(b));
 
-
+      //new String("sample") new演算子を使っているので新しいインスタンスが作られそれぞれの変数が異なる＝＝の結果はfalseを戻す
+      //equals(b)は同じ文字か確認する。変数aとbのどちらもsampleという文字を持っている為turuを戻す。
       //false , true*/
 
 
@@ -126,18 +127,30 @@ public class Main {
          count++;
       }
       System.out.println(count);*/
+
+      //internメソッドはコンスタントプールを含むメモリ内の文字列を探して、再利用するメソッドです。
+      //newを使うと新しくインスタンスを作る為falseになるが、しかしinternを使う事によって turuになる。
+      //count++にインクリメントしている為それぞれ1を足して3になる。
       //3
 
 //3章問15
       /*int num = 10;
       if (num <= 10)
       System.out.println("ok");*/
+
+      //ifの構文は if((条件式){　(num <= 10)　
+      //System.out.println("ok");  条件に一致した時に実行する処理}
       //ok
+
+
 
 //3章問16
       /*if (false)
       System.out.println("A");
       System.out.println("B");*/
+
+      //このif文の場合は(false)と記述されているのでBになる
+      //turuの場合はAで上の式になり、falseの場合はBで下の式になる。
       //B
 
 //3章問17
@@ -148,6 +161,10 @@ public class Main {
        System.out.println("B");
       if (num == 10)
        System.out.println("c");*/
+
+       //if else文は条件に合致した時と合致しなかった時の処理の両方を記述するための文
+       //(num < 10)は合致しないため表示されずBが表示されます。
+       //(num == 10)は合致するため表示されCが表示されてよってBとCが表示される
        //B C
 
 //3章問18
@@ -162,6 +179,10 @@ public class Main {
      else
      if (num == 10)
         System.out.println("D");*/
+
+        // 一つ目は(num == 100)等くない為下に流れる
+        // 二つ目は(10 < num)numの方が大きくない為流れる
+        // 三つ目は(num == 10)で等しい為答えがCになる
         //C
 
 //3章問20

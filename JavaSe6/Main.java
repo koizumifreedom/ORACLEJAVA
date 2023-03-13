@@ -142,6 +142,8 @@ public class Main {
    private static void modify(int num) {
       num *= 2;
 
+   //10
+
 //6章問30
    /*Sample s = new Sample(10);
    modify(s);
