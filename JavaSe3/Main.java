@@ -1,24 +1,35 @@
 package JavaSe3;
 
-//3章問1
+
 public class Main {
     public static void main(String[] args) {
+
+//3章問1
        /*int a = 3;
-       int b = a += 5
+       int b = a += 5;
        System.out.println(a + b);*/
     
+
+       //まずaの値を出して3 += 5で8になってbに8を代入して
+       //(a + b)で8+8をすると16になる。
+
 //16
 
 //3章問4
        /*int a = 10;
        int b = a++ + a + a-- - a-- + ++a;
        System.out.println(b);*/
+
+       //10+11+11-10+10=32
+
        //32
 
 //3章問5       
        /*boolean a = true;
        boolean b = true;
        System.out.println(a <= b);*/
+
+       // > >= < <= の4つの演算子は数値の大小を比較するものなのでエラーが発生
        //コンパイルエラー
 
 //3章問6
@@ -28,11 +39,18 @@ public class Main {
            a++;
        }
        System.out.println(a + b);*/
+
+       //&&を使っていて左オペランドがfalseになったため右オペランドは評価されない
+       //よって両方のインクリメントも実行されず10+10で20になる
        //20
 
 //3章問7
        /*int a = 100, b = 20, c=30;
        System.out.println(a % b * c + a / b);*/
+
+       //(100 % 20 * 30) + (100 / 20)
+       //(0 * 30) + (100 / 20)
+       //(0) + (5)
        //5
     
 
@@ -41,18 +59,26 @@ public class Main {
        Sample s2 = s1;
        s1 = new Sample(10);
        System.out.println(s1 == s2);*/
+
+       //s1とs2が等くないためfalseになる
+       //s1 = new Sample(10);でさらにs1に代入した為等くないのでfalse
+
        //false
 
 //3章問9
        /*Sample a = new Sample(10, "a");
        Sample b = new Sample(10,"b");
-       System.out.println(a.equals(b));*/     
+       System.out.println(a.equals(b));*/  
+
+       //意味がわからない
        //true
 
 //3章問10
        /*Object a = new Sample(10);
        Object b = new Sample(10);
        System.out.println(a.equals(b));*/
+
+       //意味がわからない
        //false
 
 //3章問11
@@ -60,12 +86,18 @@ public class Main {
        Object b = null;
        System.out.println(a.equals(b));*/
 
+       //eqメソッドはnullが渡された時には常にfalseを戻さないといけない。
+       //その為引数にnullを渡せば、falseが戻される。
+
 //3章問12
        /*String a = "sample";
        String b = "sample";
        System.out.print(a == b);
        System.out.print(" , ");
        System.out.println(a.equals(b));
+
+       //equalsメッソドで比較しているためtrueになる
+       //aとbは同値になるのでture,tureになる。
        //true , true*/
 
 //3章問13
@@ -74,7 +106,10 @@ public class Main {
       System.out.print(a == b);
       System.out.print(" , ");
       System.out.println(a.equals(b));
+
+
       //false , true*/
+
 
 //3章問14
       /*String a = "abc";
@@ -157,6 +192,7 @@ public class Main {
        //ABC
     }
 } 
+
 
 
 

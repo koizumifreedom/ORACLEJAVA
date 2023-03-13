@@ -7,8 +7,14 @@ package JavaSe2;
   }
   public void test() {
     System.out.println(value);
-  }
-}*/
+    }
+  }*/
+
+    //varによる型推論は、ローカル宣言にしか使えない
+    //Sampleクラスのコンストラクタの引数宣言にvarを使っている為コンパイルエラー
+
+    //コンパイルエラー
+  
 
 //2章問17
 /*public class Sample {
@@ -17,8 +23,12 @@ package JavaSe2;
         System.out.println(str);
     }
 }*/
+    
+        //concatメソッドはStringクラスに用意されているメソッド
+        //Hello,Java!という文字を作るにはconcatメソッドを使っって連結する必要がある
 
-//Hello,Java!
+
+        //Hello,Java!
 
 //2章問22
 public class Sample {
@@ -28,4 +38,7 @@ public class Sample {
     }
 }  
 
-//eaba
+        //まずabcdeに番号を降ると01234になる
+        //bcdと言う文字を調べている為bは1なので1になる
+
+        //1

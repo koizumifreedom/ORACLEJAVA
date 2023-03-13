@@ -111,12 +111,16 @@ public static void main(String[] args) {
 //実行時に例外がスローされる
 
 //2章問16
-/*public class Main {
+public class Main {
    public static void main(String[] args) {
-      String str = "abcde";
+      String str = "abc";
       System.out.println(str.substring(1,3).startsWith("b"));
    }    
-}*/
+}
+
+//startsWithは、文字数が引数で指定された文字で始まるかどうかを調べるメソット
+//調べた結果は真偽値で戻される
+//|a|b|c|d|e|の1と3になるからbc文字があるからture
 
 //true
 
@@ -125,6 +129,8 @@ public static void main(String[] args) {
   public static void main(String[] args) {
       System.out.println(10 + 20 + "30" + 40);
   }
+  //(10 + 20 + "30" + 40);まず10と20が足されて30になり"30"を文字としてくっつけると3030になり
+  //3030の文字に40をくっつけると303040になる
 }*/
 
 //303040
@@ -136,6 +142,9 @@ public static void main(String[] args) {
         str += "null";
         System.out.println(str);
     }
+//+=演算子は文字列を連結します。
+//str = "null"とstr += "null"は同じ意味になるので
+//nullnullになる
 }*/
 
 //nullnull
@@ -147,6 +156,8 @@ public static void main(String[] args) {
        System.out.println(sb.capacity());
    }
 }*/
+//文字列の長さ+16文字分で21になる
+//StringBuilderが16文字の扱いにおなる
 
 //21
 
@@ -160,5 +171,11 @@ public static void main(String[] args) {
         System.out.println(sb);
     }
 }*/
+
+//appendメソッドは文字列に新しい文字列を追加するメソッド
+//sb.reverse();で文字が反転してedcbaになる
+//replaceは文字列を置き換える意味になり
+//|e|d|c|b|a|(1,3,"a") 0から数えて1,3はdとcなのでaに置き換えると
+//eabaになる
 
 //eaba

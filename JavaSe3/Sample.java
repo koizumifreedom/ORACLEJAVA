@@ -3,17 +3,21 @@ package JavaSe3;
 
 
 public class Sample {
-  public static void main(String[] args) {
+  //public static void main(String[] args) {
 
 //3章問2
        /*int num = -10;
        System.out.println(10 * -num);*/
+
+       //-と言うのが正負を反転させる意味を持つ
+       //よって-numが反転して10になって10かける10で100になる
        //100
+       
 
 //3章問8
-       /*private int num;
+       private int num;
        public Sample(int num) {
-          this.num = num;*/
+          this.num = num;
         //false
 
 //9章問9
