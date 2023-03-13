@@ -77,11 +77,86 @@ public class Main {
    //s.setValue("hello");がコンパイルエラーになる
 
 //6章問12
-    Sample s = new Sample();
+    /*Sample s = new Sample();
     double result = s.divide(10,2);
-    System.out.println(result);
+    System.out.println(result);*/
 
     //float　doubleなら実行結果は5.0になる
-  }
-}
+  
+
+
+//6章問13
+    /*Sample s = new Sample();
+    int result = s.method(2);
+    System.out.println(result);*/
+
+    //methodコンパイルエラー
+
+//6章問17
+    /*Main m  = new Main();
+    System.out.prinrtln(m.calc(2, 3));
+    }
+    private double calc(double a, int b) {
+        return (a + b) / 2;
+    }
+    private double calc(int a double b) {
+        return (a + b) / 2;*/
+
+        //4行目でコンパイルエラー
+
+//6章問20
+    /*Sample s = new Sample();
+    s.Sample();*/
+
+    //hello
+
+//6章問21
+    //Sample s = new Sample();   
+    //B A
+
+//6章問22
+    //System.out.println(Sample.num);
+
+    //0
+
+//6章問23
+   //Sample s = new Sample();
+
+   //コンパイルエラー
+
+//6章問24
+   //Sample s = new Sample();
+
+   //ok.
+
+//6章問25
+   //Sample s = new Sample();
+
+   //コンパイルエラー
+
+//6章問29
+   Sample s = new Sample(10);
+   modify(s.num);
+   System.out.println(s.num);
+   }
+   private static void modify(int num) {
+      num *= 2;
+
+//6章問30
+   /*Sample s = new Sample(10);
+   modify(s);
+   System.out.println(s.num);
+   }
+   private static void modify(Sample s) {
+       s.num *= 2;*/
+
+   //20
+
+   }
+}  
+
+
+
+
+
 
