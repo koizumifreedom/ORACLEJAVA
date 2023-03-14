@@ -210,6 +210,9 @@ public class Main {
        default:
           System.out.println("C");
        }*/
+
+       //switch文はbreakが来るまで処理が実行される defaultも処理の対象になる。
+       //ABまではdefaultで確定し、System.out.println("C")が表示される為ABCと表示される。
        //ABC
     }
 } 

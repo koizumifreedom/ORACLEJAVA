@@ -3,7 +3,7 @@ package JavaSe3;
 
 
 public class Sample {
-  //public static void main(String[] args) {
+  public static void main(String[] args) {
 
 //3章問2
        /*int num = -10;
@@ -15,9 +15,9 @@ public class Sample {
        
 
 //3章問8
-       private int num;
+       /*private int num;
        public Sample(int num) {
-          this.num = num;
+          this.num = num;*/
         //false
 
 //9章問9
