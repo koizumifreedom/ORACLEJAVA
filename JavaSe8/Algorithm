@@ -1,0 +1,4 @@
+//8章問1
+interface Algorithm {
+  void perform(String name);
+}

@@ -1,0 +1,14 @@
+7章問4
+public interface A {
+
+//7章問4
+  /*  void sample() {
+    System.out.println("sample");
+   }*/
+
+//7章問5
+   @Override
+   default String toString() {
+     return "A";
+   }
+}
