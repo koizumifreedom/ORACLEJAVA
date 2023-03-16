@@ -20,8 +20,8 @@ public class Sample {
           this.num = num;*/
         //false
 
-//9章問9
-       /*private int num;
+//3章問9
+      /*  private int num;
        private String name;
        public Sample(int num, String name) {
           this.num = num;
@@ -36,7 +36,7 @@ public class Sample {
             return s.num == this.num;
            }
            return false;*/
-    
+           
 //3章問10
         /*private int num;
         public Sample(int num) {
@@ -48,6 +48,7 @@ public class Sample {
             }
             return this.num == obj.num;*/
         }
+      
 } 
 
 

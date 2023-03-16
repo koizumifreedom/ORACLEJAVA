@@ -68,7 +68,7 @@ public class Main {
 //3章問9
        /*Sample a = new Sample(10, "a");
        Sample b = new Sample(10,"b");
-       System.out.println(a.equals(b));*/  
+       System.out.println(a.equals(b));*/
 
        //意味がわからない
        //true

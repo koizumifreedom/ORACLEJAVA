@@ -62,6 +62,8 @@ public class Main {
      /*for (int i = 0; i == 0; i++) {
       System.out.println(i);
      }*/
+     //i == 0の場合はfor文の1回目の繰り返し処理が0になり、
+     //更新分が実行されてiの値は1になってしまうが、falseを戻して、for文を抜ける為0になる。
      //0
 
 //4章問7
@@ -69,6 +71,10 @@ public class Main {
         System.out.println(i++);
         j += i;
      }*/
+     //カンマ,で区切って複数記述する事はできない。
+     //論理演算子を使って記述しないと行けないためコンパイルエラー。
+     //(int i = 0, j = 0; i < 3 && j < 5; i++) {   &&を付けなければいけなかった。
+
      //コンパイルエラー
 
 //4章問8
@@ -78,23 +84,28 @@ public class Main {
      }
      private static void period() {
         System.out.print(" , ");*/
+
+        //periodメソッドによってカンマが表示される。処理が実行した後にperiodメソッドが記述されるイメージ
+        //条件式は3なので0〜2まで表示されて最後にperiodメソッドがきて0 , 1 , 2 ,になる
         //0 , 1 , 2 ,
 
 //4章問9
-     /*int array[][] = new int[][] { {1,2}, {2,3,4} };
+     int array[][] = new int[][] { {1,2}, {2,3,4} };
      int total = 0;
      for (int i = 0; i < array.length; i++) {
          for (int j = i; j < array[i].length; j++) {
              total += array[i][j];
      }
      }
-     System.out.println(total);*/
+     System.out.println(total);
+     //教えてもらう
      //10
 
 //4章問10
     /*for (int i = 0; true; i++) {
         System.out.println(i);
-    }*/
+    }*
+    //条件式にtrueが入っている場合無限にループし続ける。
     //無限ループになる
 
 //4章問11
@@ -102,6 +113,8 @@ public class Main {
     for (Object obj : array ) {
         System.out.print(obj);
     }*/
+    //Object型はjavaの仕様ではjava.lang.object型を伝承しているとみなされて
+    //配列はObject型と互換性があるためエラーにはならない。
     //Ljava.lang.String;@1dbd16a6
 
 //4章問12
@@ -137,7 +150,7 @@ public class Main {
     //9
 
 //4章問17
-    int total = 0;
+    /*int total = 0;
     a: for (int i = 0; i < 5; i++) {
         b : for (int j = 0; j < 5; j++) {
             if (i % 2 == 0) continue a;
@@ -145,7 +158,7 @@ public class Main {
             total += j;
         }
     }
-    System.out.println(total); 
+    System.out.println(total); */
     //12   
     }
 }
