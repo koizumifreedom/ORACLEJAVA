@@ -90,14 +90,14 @@ public class Main {
         //0 , 1 , 2 ,
 
 //4章問9
-     int array[][] = new int[][] { {1,2}, {2,3,4} };
+     /*int array[][] = new int[][] { {1,2}, {2,3,4} };
      int total = 0;
      for (int i = 0; i < array.length; i++) {
          for (int j = i; j < array[i].length; j++) {
              total += array[i][j];
      }
      }
-     System.out.println(total);
+     System.out.println(total);*/
      //教えてもらう
      //10
 
@@ -125,17 +125,21 @@ public class Main {
     for (String str : array) {
         System.out.print(str);
     }*/
+    //拡張for文は一時的にコピーされてループするので
+    //値が変わる事が無く{"A","B","C"}が表示される
     //ABC
 
 //4章問14
-    /*String[] array = { "A" , "B" };
+    String[] array = { "A" , "B" };
     for (String a : array) {
         for (String b : array) {
             if ("B".equals(b))
                break;
             System.out.print(b);
         }
-    }*/
+    }
+
+    //二重ループの中で使われるbreakによって中断されるのは、直近にあるループだけ。
     //AA
 
 //4章問15
@@ -147,6 +151,9 @@ public class Main {
            total += i;
     }
     System.out.println(total);*/
+
+    //continueは繰り返し処理をスキップする
+    //偶数の場合はcontinueでスキップされ奇数はtotal += i;で1,3,5を足すと9になる
     //9
 
 //4章問17
@@ -159,6 +166,9 @@ public class Main {
         }
     }
     System.out.println(total); */
+
+    ///ラベルが付いてる事に着目してgut 
+    //continueやbreakがどのラベルに行くかを確認しよう。
     //12   
     }
 }
