@@ -167,7 +167,7 @@ public class Main {
     }
     System.out.println(total); */
 
-    ///ラベルが付いてる事に着目してgut 
+    ///ラベルが付いてる事に着目して
     //continueやbreakがどのラベルに行くかを確認しよう。
     //12   
     }
