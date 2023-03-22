@@ -17,6 +17,9 @@ public class Main {
      int [] e[];
      int [][] f[];*/
      
+     //配列変数の宣言方法大カッコ[]を使って宣言する。
+     //データ型の後ろ変数名の後ろ両方に記述可能
+     //なのでコンパイルエラーが発生する事はない
      //何も表示されない　コンパイルエラーはなし
 
 //5章問5
@@ -27,6 +30,9 @@ public class Main {
      }
      System.out.println(total);*/
 
+     //配列インスタンスと要素は別者のと考え
+     //new Item[3]だとインスタンスのみの生成になるので
+     //もし要素を初期化したい場合は{3}を使う
      //実行時に例外がスローされる
 
 //5章問6
@@ -35,6 +41,9 @@ public class Main {
      for (String str : array) {
          System.out.print(str);
      }*/
+
+     //要素の値が変わっても配列には影響がない
+     //0123でABCDと考えAの場所に要素arrayのnullが入ってくるのでnullBCDになる
      //nullBCD
 
 //5章問8
@@ -44,7 +53,9 @@ public class Main {
          total += tmp.length;
      } 
      System.out.println(total);*/
-
+     
+     //一次元目の二つ目の要素はnullで初期化されている為
+     //lengthを使って要素数を数えようとしているがnullの為参照先が存在しないのでスローになる
      //実行時にスローされる
 
 //5章問10
@@ -57,6 +68,9 @@ public class Main {
          }
      }
      System.out.println(total);
+
+     //cloneメソッドは同じ値を持った配列インスタンスが複製される。
+     //2次元配列から値を一つずつ取り出して{ 1, 2 }, { 1, 2 }, { 1, 2, 3 }を足すと12になる。
 
      //12
      }
