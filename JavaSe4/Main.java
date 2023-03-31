@@ -3,28 +3,28 @@ package JavaSe4;
 public class Main {
     public static void main(String[] args) {
 //4章問1
-        /*int a = 11;
+        int a = 11;
         int b = 0;
-        while (b < 5) {
-           if (5 < a) {
-              System.out.println(b);
-           }
-           a--;
-           b++;
-       }*/
-       //(b < 5)ここが空欄の場合、まず変数bの値が0〜4の間を
-       //繰り返すことを指定すれば良いので条件が合うのが(b < 5)になります。
-       //0 1 2 3 4
+        //(b < 5)ここが空欄の場合、まず変数bの値が0〜4の間を
+        //繰り返すことを指定すれば良いので条件が合うのが(b < 5)になります。
+        //0 1 2 3 4
 
 //4章問2
+        while (b < 5) {
+            if (5 < a) {
+                System.out.println(b);
+            }
+            a--;
+            b++;
+        }
       /* int a = 0;
        do {
          System.out.println(a++);
        } while (5 > a);*/
 
-       //do-whileの基本構文はdo{//繰り返し処理}while（条件式）;
-       //条件が合うのが(5 > a)になる。
-       //0 1 2 3 4
+        //do-whileの基本構文はdo{//繰り返し処理}while（条件式）;
+        //条件が合うのが(5 > a)になる。
+        //0 1 2 3 4
 
 //4章問3
       /*int a = 0;
@@ -130,14 +130,14 @@ public class Main {
     //ABC
 
 //4章問14
-    String[] array = { "A" , "B" };
+    /*String[] array = { "A" , "B" };
     for (String a : array) {
         for (String b : array) {
             if ("B".equals(b))
                break;
             System.out.print(b);
         }
-    }
+    }*/
 
     //二重ループの中で使われるbreakによって中断されるのは、直近にあるループだけ。
     //AA
